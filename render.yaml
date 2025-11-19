@@ -4,7 +4,7 @@ services:
     runtime: node
     region: frankfurt
     plan: free
-    buildCommand: npm install
+      buildCommand: npm install
     startCommand: npm start
     envVars:
       - key: GROQ_API_KEY
