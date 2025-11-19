@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: chat-groq-ui
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
