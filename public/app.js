@@ -162,9 +162,9 @@ async function sendMessage(text) {
       },
       body: JSON.stringify({
         messages: conv.messages,
-        model: "llama-3.3-70b-versatile",
+     model: "deepseek-r1-distill-llama-70b",
       }),
-    });
+  
 
     const data = await res.json();
     removeTyping();
