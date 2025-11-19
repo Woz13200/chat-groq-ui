@@ -27,7 +27,7 @@ app.post('/api/chat', async (req, res) => {
     }
 
     const chatCompletion = await groq.chat.completions.create({
-      model: model || 'llama-3.3-70b-versatile',
+      model: model || 'deepseek-r1-distill-llama-70b',
       messages,
       temperature: 0.4,
     });
