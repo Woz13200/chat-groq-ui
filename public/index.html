@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Groq Chat UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="logo">Groq Chat</div>
+        <button id="new-chat-btn" class="primary-btn">+ New chat</button>
+        <div class="history-header">History</div>
+        <div id="history-list" class="history-list"></div>
+        <div class="sidebar-footer">
+          <div class="env-status">
+            <span class="dot"></span>
+            <span>Render · Online</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="chat">
+        <header class="chat-header">
+          <div>
+            <h1>Assistant</h1>
+            <p>LLM via Groq · model: llama-3.3-70b-versatile</p>
+          </div>
+        </header>
+
+        <section id="chat-messages" class="chat-messages"></section>
+
+        <form id="chat-form" class="chat-input">
+          <textarea
+            id="user-input"
+            rows="1"
+            placeholder="Ãcris ton message ici..."
+          ></textarea>
+          <button type="submit" class="primary-btn">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
