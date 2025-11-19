@@ -10,13 +10,7 @@ function createNewConversation(initialMessage) {
     title: initialMessage
       ? initialMessage.slice(0, 40)
       : "New chat " + new Date().toLocaleTimeString(),
-    messages: [
-      {
-        role: "system",
-        content:
-          "You are a helpful, concise assistant. Answer in French by default.",
-      },
-    ],
+  messages: [],
     createdAt: new Date().toISOString(),
   };
   conversations.unshift(conv);
