@@ -1,0 +1,14 @@
+{
+  "name": "chat-groq-ui",
+  "version": "1.0.0",
+  "description": "Minimal ChatGPT-like UI powered by Groq, deployable on Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "groq-sdk": "^0.9.0"
+  }
+}
