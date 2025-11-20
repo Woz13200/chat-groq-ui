@@ -148,7 +148,7 @@ async function sendMessage(text) {
   conv.messages.push({ role: "user", content: text });
   if (!conv.title || conv.title.startsWith("New chat")) {
         conv.title = text.slice(0, 40);
-    )  }
+  )  }
 saveConversations();
   renderHistory();
   renderMessages();
@@ -161,13 +161,12 @@ saveConversations();
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        messages: conv.messages,
-     model: "deepseek-r1-distill-llama-70b",
-      })),
-          });
+     body: JSON.stringify({
+    messages: conv.messages,
+    model: "deepseek-r1-distill-llama-70b",
+  }),
+  });
   
-
     const data = await res.json();
     removeTyping();
 
