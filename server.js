@@ -24,10 +24,9 @@ app.post('/api/chat', async (req, res) => {
     const { messages, model } = req.body;
     if (!Array.isArray(messages) || messages.length === 0) {
       return res.status(400).json({ error: 'messages array is required' });
-    }
-
+}'
     const chatCompletion = await groq.chat.completions.create({
-      model: model || 'deepseek-r1-distill-llama-70b',
+   model: model || 'gpt-oss-20b',
       messages,
       temperature: 0.4,
     });
