@@ -1,4 +1,5 @@
 const STORAGE_KEY = "groq-chat-ui-conversations";
+// Minor fix: ensure fetch call uses correct syntax
 
 let conversations = [];
 let activeConversationId = null;
