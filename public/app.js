@@ -163,7 +163,7 @@ async function sendMessage(text) {
       body: JSON.stringify({
         messages: conv.messages,
      model: "deepseek-r1-distill-llama-70b",
-      }),
+      });
   
 
     const data = await res.json();
