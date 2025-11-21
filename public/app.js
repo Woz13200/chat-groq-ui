@@ -161,11 +161,10 @@ saveConversations();
       headers: {
         "Content-Type": "application/json",
       },
-     body: JSON.stringify({
-    messages: conv.messages,
-    model: "deepseek-r1-distill-llama-70b",
-  }),
-  });
+       body: JSON.stringify({
+        messages: conv.messages,
+      }),
+    });
   
     const data = await res.json();
     removeTyping();
