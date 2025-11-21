@@ -165,6 +165,7 @@ saveConversations();
         messages: conv.messages,
       }),
     });
+gpt
   
     const data = await res.json();
     removeTyping();
